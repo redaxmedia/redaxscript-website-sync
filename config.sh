@@ -6,5 +6,4 @@ echo sitemap: https://redaxscript.com/sitemap_xml > build/robots.txt
 
 cd build
 php console.php config parse --db-url $DB_URL
-php console.php status database
 rm console.php
