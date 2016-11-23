@@ -34,6 +34,7 @@ module.exports = function (grunt)
 					'libraries/**',
 					'modules/Analytics/**',
 					'modules/DirectoryLister/**',
+					'modules/Experiments/**',
 					'modules/PageCache/**',
 					'modules/SitemapXml/**',
 					'modules/SyntaxHighlighter/**',
