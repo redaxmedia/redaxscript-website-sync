@@ -21,6 +21,7 @@ script:
 
 after_script:
 - lftp $FTP_URL -e "glob -d mirror build . --reverse --delete-first --parallel=10 && chmod 0444 config.php && exit"
+- sh trigger.sh
 
 notifications:
  email:
