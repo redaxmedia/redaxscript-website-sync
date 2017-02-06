@@ -40,7 +40,6 @@ module.exports = function (grunt)
 					'modules/Validator/**',
 					'templates/admin/**',
 					'templates/default/**',
-					'templates/website/**',
 					'config.php',
 					'console.php',
 					'index.php',
