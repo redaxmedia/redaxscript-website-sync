@@ -4,13 +4,21 @@
 	"version": "3.0.0",
 	"homepage": "http://redaxscript.com",
 	"license": "GPL-3.0",
+	"repositories":
+	[
+		{
+			"type": "git",
+			"url": "https://github.com/redaxmedia/redaxscript-template.git"
+		}
+	],
 	"require":
 	{
 		"php": ">5.4"
 	},
 	"require-dev":
 	{
-		"redaxmedia/redaxscript": "dev-master"
+		"redaxmedia/redaxscript": "dev-master",
+		"redaxmedia/redaxscript-template": "dev-master"
 	},
 	"scripts":
 	{

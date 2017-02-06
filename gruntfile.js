@@ -49,6 +49,16 @@ module.exports = function (grunt)
 				dest: 'build',
 				cwd: 'vendor/redaxmedia/redaxscript/',
 				expand: true
+			},
+			distTemplate:
+			{
+				src:
+				[
+					'templates/redaxscript/**'
+				],
+				dest: 'build',
+				cwd: 'vendor/redaxmedia/redaxscript-template/',
+				expand: true
 			}
 		}
 	});
