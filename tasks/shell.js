@@ -27,7 +27,12 @@ module.exports = function ()
 		},
 		makeFiles:
 		{
-			command: 'mkdir files'
+			command:
+			[
+				'cd build',
+				'mkdir files'
+			]
+			.join('&&')
 		},
 		removeBuild:
 		{
