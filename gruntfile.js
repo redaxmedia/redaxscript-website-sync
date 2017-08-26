@@ -25,6 +25,6 @@ module.exports = function (grunt)
 	[
 		'shell:configDatabase',
 		'shell:configModules',
-		'shell:makeDirectory'
+		'shell:makeFiles'
 	]);
 };
