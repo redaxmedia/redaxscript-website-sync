@@ -7,8 +7,8 @@ module.exports = function (grunt)
 	grunt.initConfig(
 	{
 		copy: require('./tasks/copy')(grunt),
-		http: require('./tasks/http')(grunt),
-		shell: require('./tasks/shell')(grunt)
+		shell: require('./tasks/shell')(grunt),
+		http: require('./tasks/http')(grunt)
 	});
 
 	/* load tasks */
