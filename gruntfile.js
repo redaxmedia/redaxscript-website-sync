@@ -6,8 +6,9 @@ module.exports = function (grunt)
 
 	grunt.initConfig(
 	{
-		shell: require('./tasks/shell')(grunt),
-		copy: require('./tasks/copy')(grunt)
+		copy: require('./tasks/copy')(grunt),
+		http: require('./tasks/http')(grunt),
+		shell: require('./tasks/shell')(grunt)
 	});
 
 	/* load tasks */
@@ -26,5 +27,9 @@ module.exports = function (grunt)
 		'shell:configDatabase',
 		'shell:configModules',
 		'shell:makeFiles'
+	]);
+	grunt.registerTask('trigger',
+	[
+		'http:trigger'
 	]);
 };
