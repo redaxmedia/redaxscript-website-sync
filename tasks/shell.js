@@ -10,7 +10,8 @@ module.exports = function ()
 			[
 				'cd build',
 				'php console.php config parse --db-url $DB_URL',
-				'php console.php status database'
+				'php console.php status database',
+				'rm console.php'
 			]
 			.join('&&')
 		},
