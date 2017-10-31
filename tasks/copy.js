@@ -29,7 +29,7 @@ module.exports = function ()
 				'.htaccess'
 			],
 			dest: 'build',
-			cwd: 'vendor/redaxmedia/redaxscript/',
+			cwd: 'vendor/redaxscript/redaxscript/',
 			expand: true
 		},
 		distTemplate:
@@ -39,7 +39,7 @@ module.exports = function ()
 				'templates/redaxscript/**'
 			],
 			dest: 'build',
-			cwd: 'vendor/redaxmedia/redaxscript-template/',
+			cwd: 'vendor/redaxscript/redaxscript-template/',
 			expand: true
 		}
 	};
