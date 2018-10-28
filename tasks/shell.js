@@ -10,8 +10,7 @@ module.exports = () =>
 			[
 				'cd build',
 				'php console.php config parse --db-url $DB_URL',
-				'php console.php status database',
-				'rm console.php'
+				'php console.php status database'
 			]
 			.join('&&')
 		},
@@ -26,12 +25,21 @@ module.exports = () =>
 			]
 			.join('&&')
 		},
-		makeFiles:
+		configFiles:
 		{
 			command:
 			[
 				'cd build',
 				'mkdir files'
+			]
+			.join('&&')
+		},
+		removeConsole:
+		{
+			command:
+			[
+				'cd build',
+				'rm console.php'
 			]
 			.join('&&')
 		},
