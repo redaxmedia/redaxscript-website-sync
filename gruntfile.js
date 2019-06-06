@@ -39,6 +39,7 @@ module.exports = grunt =>
 	]);
 	grunt.registerTask('trigger',
 	[
-		'http:trigger'
+		'http:triggerDownload',
+		'http:triggerGallery'
 	]);
 };

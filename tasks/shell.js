@@ -30,7 +30,8 @@ module.exports = () =>
 			command:
 			[
 				'cd build',
-				'mkdir files'
+				'mkdir _download',
+				'mkdir _gallery'
 			]
 			.join('&&')
 		},

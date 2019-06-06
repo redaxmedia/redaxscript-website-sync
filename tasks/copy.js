@@ -21,6 +21,7 @@ module.exports = () =>
 				'modules/DirectoryLister/**',
 				'modules/FormValidator/**',
 				'modules/HtmlValidator/**',
+				'modules/Gallery/**',
 				'modules/PageCache/**',
 				'modules/SitemapXml/**',
 				'modules/SyntaxHighlighter/**',
