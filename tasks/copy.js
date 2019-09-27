@@ -23,6 +23,7 @@ module.exports = () =>
 				'modules/HtmlValidator/**',
 				'modules/Gallery/**',
 				'modules/PageCache/**',
+				'modules/Reporter/**',
 				'modules/SitemapXml/**',
 				'modules/SyntaxHighlighter/**',
 				'modules/TextareaResizer/**',
