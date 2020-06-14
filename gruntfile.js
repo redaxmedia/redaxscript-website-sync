@@ -27,7 +27,7 @@ module.exports = grunt =>
 	[
 		'shell:configDatabase',
 		'shell:configModules',
-		'shell:configFiles'
+		'shell:configDirectory'
 	]);
 	grunt.registerTask('lock',
 	[
