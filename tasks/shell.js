@@ -25,7 +25,7 @@ module.exports = () =>
 			]
 			.join('&&')
 		},
-		configFiles:
+		configDirectory:
 		{
 			command:
 			[
