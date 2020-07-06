@@ -12,7 +12,7 @@ before_install:
 
 install:
 - composer install
-- nvm install 10
+- nvm install 14
 - npm install --global grunt-cli
 - npm install
 - cd vendor/redaxscript/redaxscript-template && npm install && cd -
@@ -33,4 +33,3 @@ after_success:
 notifications:
  email:
  - team@redaxscript.com
-
