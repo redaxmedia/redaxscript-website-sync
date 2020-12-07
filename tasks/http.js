@@ -6,26 +6,29 @@ module.exports = () =>
 		{
 			options:
 			{
-				url: 'https://api.travis-ci.org/repo/redaxscript%2Fredaxscript-download-sync/requests'
+				url: 'https://api.github.com/repos/redaxscript/redaxscript-download-sync/actions/workflows/ci.yml/dispatches'
 			}
 		},
 		triggerGallery:
 		{
 			options:
 			{
-				url: 'https://api.travis-ci.org/repo/redaxscript%2Fredaxscript-gallery-sync/requests'
+				url: 'https://api.github.com/repos/redaxscript/redaxscript-gallery-sync/actions/workflows/ci.yml/dispatches'
 			}
 		},
 		options:
 		{
-			method: 'post',
+			method: 'POST',
 			headers:
 			{
-				'Content-Type': 'application/json',
-				'Accept': 'application/json',
-				'Travis-API-Version': 3,
-				'Authorization': 'token ' + process.env.TRAVIS_TOKEN
-			}
+				'Accept': 'application/vnd.github.v3+json',
+				'Authorization': 'token ' + process.env.TRIGGER_TOKEN,
+				'User-Agent': 'redaxscript-website-sync'
+			},
+			body: JSON.stringify(
+			{
+				ref: 'master'
+			})
 		}
 	};
 
