@@ -17,14 +17,14 @@
 	},
 	"require-dev":
 	{
-		"redaxscript/redaxscript": "dev-master",
+		"redaxscript/redaxscript": "4.4.0",
 		"redaxscript/redaxscript-template": "dev-master"
 	},
 	"scripts":
 	{
 		"post-install-cmd":
 		[
-			"cd vendor/redaxscript/redaxscript && composer install"
+			"composer install --working-dir=vendor/redaxscript/redaxscript"
 		],
 		"post-update-cmd":
 		[

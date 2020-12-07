@@ -3,6 +3,4 @@ Redaxscript Website Sync
 
 > Yet another cronjob for Redaxscript's website.
 
-[![Build Status](https://img.shields.io/travis/redaxscript/redaxscript-website-sync.svg)](https://travis-ci.org/redaxscript/redaxscript-website-sync)
-
-
+[![Build Status](https://img.shields.io/github/workflow/status/redaxscript/redaxscript-website-sync/ci.svg)](https://github.com/redaxscript/redaxscript-website-sync/actions?query=workflow:ci)
