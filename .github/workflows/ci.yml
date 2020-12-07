@@ -12,13 +12,13 @@ jobs:
     uses: shivammathur/setup-php@2.7.0
     with:
      php-version: 7.4
-  - name: Set up Node 15
+  - name: Set up Node 14
     uses: actions/setup-node@v1
     with:
-     node-version: 15
+     node-version: 14
   - run: sudo apt install lftp
-  - run: composer install 
-  - run: npm install
+  - run: composer install
+  - run: npm install --legacy-peer-deps
   - run: grunt shell:configTemplates
   - run: grunt build --gruntfile=vendor/redaxscript/redaxscript/gruntfile.js
   - run: grunt build --gruntfile=vendor/redaxscript/redaxscript-template/gruntfile.js
