@@ -8,7 +8,7 @@ module.exports = () =>
 			[
 				'build'
 			],
-			dest: 'www/htdocs/w00976cb/redaxscript',
+			dest: 'redaxscript',
 			options:
 			{
 				url: process.env.FTP_URL,
