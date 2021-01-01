@@ -28,10 +28,6 @@ module.exports = grunt =>
 		'shell:configDatabase',
 		'shell:configModules'
 	]);
-	grunt.registerTask('lock',
-	[
-		'shell:removeConsole'
-	]);
 	grunt.registerTask('deploy',
 	[
 		'ftpress:deploy'

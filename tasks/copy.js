@@ -28,6 +28,7 @@ module.exports = () =>
 				'modules/SyntaxHighlighter/**',
 				'modules/TextareaResizer/**',
 				'templates/admin/**',
+				'templates/console/**',
 				'templates/default/**',
 				'config.php',
 				'console.php',
