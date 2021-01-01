@@ -1,7 +1,7 @@
 {
 	"name": "redaxscript/redaxscript-website-sync",
 	"description": "Yet another cronjob for Redaxscript's website",
-	"version": "4.4.0",
+	"version": "4.5.0",
 	"homepage": "https://redaxscript.com",
 	"license": "MIT",
 	"repositories":
@@ -17,7 +17,7 @@
 	},
 	"require-dev":
 	{
-		"redaxscript/redaxscript": "4.4.0",
+		"redaxscript/redaxscript": "4.5.0",
 		"redaxscript/redaxscript-template": "dev-master"
 	},
 	"scripts":
